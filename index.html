@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>813</title>
+  <link rel="shortcut icon" type="image/png" href="images/icon.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+body
+{
+  font-family: 'Cabin', sans-serif;
+  background-color: #333333;
+}
+.container {
+    position: relative;
+    position: absolute;
+    top: 60%;
+    left: 30%; 
+}
+
+.container2 {
+    position: relative;
+    position: absolute;
+    top: 60%;
+    left: 52%; 
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  top: 85px;
+  left: 137px;
+}
+
+.middle2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  top: 85px;
+  left: 137px;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.container2:hover .image2 {
+  opacity: 0.3;
+}
+
+.container2:hover .middle2 {
+  opacity: 1;
+}
+.text {
+  background-color: #686868;
+  color: white;
+  font-size: 30px;
+  padding: 63px 93px;
+}
+
+.text2 {
+  background-color: #686868;
+  color: white;
+  font-size: 30px;
+  padding: 63px 110px;
+}
+</style>
+</head>
+<body>
+<!-- Sidebar -->
+<div class="w3-sidebar w3-grey w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times; </button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div>
+  <button class="w3-button w3-grey w3-xxlarge" onclick="w3_open()">&#9776;</button>
+</div>
+     
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<center><h1 style="color:white; font-size: 200%">RICHARD ZHAO</h1>
+<br>
+<br>
+<br>
+<h1 style="color:#A8000E; font-size: 650%"><strong> #813</strong></h1>
+<h2 style="color:white; font-size:100%"> Student at Carnegie Mellon who hopes to reform education. I make some games on the side too.</h2>
+</center>
+<div class="container">
+  <img src="images/devblog.jpg" alt="Avatar" style="width: 275px; height: 170px">
+  <div class="middle">
+    <div class="text"><a href="index.html">Python</a></div>
+  </div>
+</div>
+
+<div class="container2">
+  <img src="images/payday.jpg" alt="Avatar" style="width: 275px; height: 170px">
+  <div class="middle2">
+    <div class="text2"><a href="https://notitledevblog.wordpress.com/">Blog</a></div>
+  </div>
+</div>
+
+  
+</body>
+</html>
