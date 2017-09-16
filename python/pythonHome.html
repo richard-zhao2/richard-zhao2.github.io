@@ -39,22 +39,58 @@
   <button class="w3-button w3-block w3-left-align" onclick="myAccFunc('acc4')">
   Loops <i class="fa fa-caret-down"></i>
   </button>
-  <div id="acc3" class="w3-hide w3-white w3-card-2">
+  <div id="acc4" class="w3-hide w3-white w3-card-2">
     <a href="#" class="w3-bar-item w3-button">Loops</a>
     <a href="#" class="w3-bar-item w3-button">Problems</a>
     <a href="#" class="w3-bar-item w3-button">Solutions</a>
   </div>
 
-  <button class="w3-button w3-block w3-left-align" onclick="myAccFunc('acc4')">
+  <button class="w3-button w3-block w3-left-align" onclick="myAccFunc('acc5')">
   Strings <i class="fa fa-caret-down"></i>
   </button>
-  <div id="acc3" class="w3-hide w3-white w3-card-2">
+  <div id="acc5" class="w3-hide w3-white w3-card-2">
     <a href="#" class="w3-bar-item w3-button">Creating Strings</a>
     <a href="#" class="w3-bar-item w3-button">Looping Over Strings</a>
     <a href="#" class="w3-bar-item w3-button">Manipulating Strings</a>
     <a href="#" class="w3-bar-item w3-button">Problems</a>
     <a href="#" class="w3-bar-item w3-button">Solutions</a>
   </div>
+
+  <button class="w3-button w3-block w3-left-align" onclick="myAccFunc('acc6')">
+  Classes <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="acc6" class="w3-hide w3-white w3-card-2">
+    <a href="#" class="w3-bar-item w3-button">Introduction</a>
+    <a href="#" class="w3-bar-item w3-button">Creating Classes</a>
+    <a href="#" class="w3-bar-item w3-button">Constructor</a>
+    <a href="#" class="w3-bar-item w3-button">Inheritance</a>
+    <a href="#" class="w3-bar-item w3-button">Static Methods</a>
+    <a href="#" class="w3-bar-item w3-button">Problems</a>
+    <a href="#" class="w3-bar-item w3-button">Solutions</a>
+  </div>
+
+  <button class="w3-button w3-block w3-left-align" onclick="myAccFunc('acc7')">
+  Recursion <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="acc7" class="w3-hide w3-white w3-card-2">
+    <a href="#" class="w3-bar-item w3-button">Introduction</a>
+    <a href="#" class="w3-bar-item w3-button">Basic Examples</a>
+    <a href="#" class="w3-bar-item w3-button">Backtracking</a>
+    <a href="#" class="w3-bar-item w3-button">Problems</a>
+    <a href="#" class="w3-bar-item w3-button">Solutions</a>
+  </div>
+
+  <button class="w3-button w3-block w3-left-align" onclick="myAccFunc('acc8')">
+  Pygame <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="acc8" class="w3-hide w3-white w3-card-2">
+    <a href="#" class="w3-bar-item w3-button">Introduction(why pygame)</a>
+    <a href="#" class="w3-bar-item w3-button">Rects and Collision</a>
+    <a href="#" class="w3-bar-item w3-button">Sprites</a>
+    <a href="#" class="w3-bar-item w3-button">Handling Events</a>
+    <a href="#" class="w3-bar-item w3-button">Animation</a>
+  </div>
+
 
 
 </div>
@@ -64,10 +100,20 @@
 <h2>Computer Science with Python</h2>
 <p>Hi, my name's Richard and this is a very simple introduction to computer science.</p>
 <p>One of the main issues I have with a lot of online resources is that they're usually glorified syntax references. Rarely do I find sources that develop problem-solving skills, and the ones that do often focus very heavily on that alone, so I made this site in hopes that it'll help bridge the gap between knowing a bunch of syntax and knowing how to use that knowledge to solve problems.</p>
-<p>Another thing I hate about a lot of online resources is that they always use videos(which are nice in their own way) but sometimes I want to power through documentation and learn quickly instead of listening to poorly written jokes for an extra 3 minutes. Other times I like to watch a video when I need to go slower. Sometimes I like to do practice problems to brush up on skills, and other times I just want a refresher. What usually ends up happening is that I don't get to choose which style I want to learn with, so I split up content and practice problems.</p>
-<p>I added a solutions section to give a sample solution of the problems. A lot of websites don't like giving you solutions in hopes that it "forces" you to learn. What usually ends up happening is I get mad and just leave the site, having learned nothing. </p>
+<p>Another thing I hate about a lot of online resources is that they always only use videos(which are nice in their own way) but sometimes I want to power through documentation and learn quickly instead of listening to poorly written jokes for an extra 3 minutes. Other times I like to watch a video when I need to go slower. Sometimes I like to do practice problems to brush up on skills, and other times I just want a refresher. What usually ends up happening is that I don't get to choose which style I want to learn with, so I split up content and practice problems.</p>
+<p>I added a solutions section to give a sample solution of the problems. There are multiple ways to solve each problem and there's definitely better coded ones than the ones I provide. A lot of websites don't like giving you solutions in hopes that it "forces" you to learn, but what usually ends up happening is I get mad and just leave the site. </p>
 <p>I like starting off with Python because it's an easy language to pickup, but language choice doesn't really matter in the end.</p>
-<p>Hopefully, you'll end up learning these topics:</p>
+<p>Ideally, you'd learn more about problem solving skills so you can switch to any language you want, but hopefully, you'll end up learning these topics:</p>
+<u1>
+  <li>Basic Syntax and Using Operators</li>
+  <li>Functions</li>
+  <li>Conditionals</li>
+  <li>Loops</li>
+  <li>Strings</li>
+  <li>Classes + Object Oriented Programming</li>
+  <li>Recursion</li>
+  <li>Basic Pygame</li>
+</u1>
 </div>
 
 <script>
@@ -75,11 +121,11 @@ function myAccFunc(id) {
     var x = document.getElementById(id);
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
-        x.previousElementSibling.className += " w3-light-grey";
+        x.previousElementSibling.className += " w3-green";
     } else { 
         x.className = x.className.replace(" w3-show", "");
         x.previousElementSibling.className = 
-        x.previousElementSibling.className.replace(" w3-light-grey", "");
+        x.previousElementSibling.className.replace(" w3-green", "");
     }
 }
 
@@ -87,11 +133,11 @@ function myDropFunc() {
     var x = document.getElementById("demoDrop");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
-        x.previousElementSibling.className += " w3-light-grey";
+        x.previousElementSibling.className += " w3-green";
     } else { 
         x.className = x.className.replace(" w3-show", "");
         x.previousElementSibling.className = 
-        x.previousElementSibling.className.replace(" w3-light-grey", "");
+        x.previousElementSibling.className.replace(" w3-grey", "");
         //to change back w3-green
     }
 }
