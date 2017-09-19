@@ -184,7 +184,7 @@ pre {
 
 
 
-<div id= "introduction" class="w3-container" style="margin-left:160px">
+<div id= "introduction" class="w3-container" style="margin-left:160px; margin-right:160px">
 <h2 style="color:#d7cec7">Introduction</h2>
 <p style="color:#d7cec7">Before we get started, you're going to need to install Python and a text editor and/or IDE.</p>
 <p style="color:#d7cec7">You can go to python's website <a href="https://www.python.org/downloads/">here</a> and download Python 3. You will also need a text editor or IDE; I personally use Sublime because it's very lightweight and fast. However, setting up Sublime for Python can be very annoying. <a href="https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/">Here</a> is a good tutorial for setting up Sublime.</p>
@@ -203,7 +203,33 @@ pre {
 
 <p style="color:#d7cec7"> Pretty much every new programmer starts off with this program shown here: </p>
 
+<img src="../images/intro1.png" alt="Intro 1" style="width:1200px;height:350px;">
 
+<p style="color:#d7cec7"> There are 3 main parts to this very simple program. Namely, they are: </p>
+<u1 style="color:#d7cec7">
+  <li> The "print" part indicates that we are printing something to the console. The general form is print(whatever we want to print) </li>
+  <li> The parenthesis indicate that whatever print intends to print must be within those parenthesis. E.g print("hello")world will not print "hello world" (this will just crash, but pretend it didn't) </li>
+  <li> The quotations indicate that we are printing a string, and whatever's between the quotations to the console. That is to say, print("HELLO") will print "HELLO" to the console. We'll discuss strings indepth later on. </li>
+</u1>
+
+<p style="color:#d7cec7"> And if for instance, I wanted to print out some other string, I would change the contents between the quotation. E.g if I typed in print("Goodbye, cruel world"), the console would print out "Goodbye, cruel world" without the quotations. </p>
+
+<p style="color:#d7cec7"> You can also "add" different outputs together. Consider the following example: </p>
+
+<img src="../images/intro2.png">
+
+<p style="color:#d7cec7"> Notice how I set some variable "a" to equal the string(a string is basically just text) "Hello" and the variable "b" to "world". Python adds strings together by simply throwing them together. Also notice how I didn't need parenthesis that time; this is because Python already knows that both "a" and "b" are strings.</p>
+
+<p style="color:#d7cec7"> The same applies for integers too!</p>
+<img src="../images/intro3.png">
+
+<p style="color:#d7cec7"> However, consider this case:</p>
+<img src="../images/intro4.png">
+
+<p style="color:#d7cec7"> The error says I can't add a str and an int together- that is, I can't add a number and string together. This makes sense, because in the context of integers, adding would clearly mean integer addition, but in the case of strings it concatenates them together. So how does Python know whether or not you want the integer representation of "2 + b" or if you want the string "2b". It doesn't, so it crashes; I can't add together variables/things that are off different types. To remedy this, I have to do the following:</p>
+<img src="../images/intro5.png">
+
+<p style="color:#d7cec7"> Putting a str() around my number converts the integer 2 into the string "2"-- now we can safely add together to get the output desired. Alternatively, instead of using a "+" I can use a comma "," instead to get similar effects. </p>
 </div>
 
 <script>
