@@ -226,7 +226,7 @@ pre {
 <p style="color:#d7cec7"> However, consider this case:</p>
 <img src="../images/intro4.png">
 
-<p style="color:#d7cec7"> The error says I can't add a str and an int together- that is, I can't add a number and string together. This makes sense, because in the context of integers, adding would clearly mean integer addition, but in the case of strings it concatenates them together. So how does Python know whether or not you want the integer representation of "2 + b" or if you want the string "2b". It doesn't, so it crashes; I can't add together variables/things that are off different types. To remedy this, I have to do the following:</p>
+<p style="color:#d7cec7"> The error says I can't add a str and an int together- that is, I can't add a number and string together. This makes sense, because in the context of integers, adding would clearly mean integer addition, but in the case of strings it concatenates them together. So how does Python know whether or not you want the integer representation of "2 + b" or if you want the string "2b"? It doesn't, so it crashes; you can't add together variables/things that are off different types. To remedy this, you have to do the following:</p>
 <img src="../images/intro5.png">
 
 <p style="color:#d7cec7"> Putting a str() around my number converts the integer 2 into the string "2"-- now we can safely add together to get the output desired. Alternatively, instead of using a "+" I can use a comma "," instead to get similar effects. </p>
